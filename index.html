@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobro — Вигідна заправка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-container">
+    <a href="/" class="logo">
+      <img src="assets/images/logo/dobro.svg" alt="Dobro" class="logo-img">
+    </a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero__inner">
+      <h1 class="hero__title">Твоя вигідна заправка<br>починається <span>тут</span></h1>
+      <p class="hero__subtitle">Отримай промокод на <span>10 літрів</span> без зайвих складнощів</p>
+      <div class="hero__cta">
+        <a href="#instruction" class="btn btn--accent">Як отримати?</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="stations">
+    <div class="container">
+      <h2 class="stations__title">Доступні заправки</h2>
+      <div class="stations__grid">
+        <div class="station-card">
+          <div class="station-card__logo"><img src="assets/images/logos/oko.png" alt="OKKO"></div>
+          <div class="station-card__fuels"><span>A-95</span><span>ДП</span><span>Газ</span></div>
+          <button class="btn btn--accent station-card__btn" data-modal>Отримати промокод</button>
+        </div>
+        <div class="station-card">
+          <div class="station-card__logo"><img src="assets/images/logos/wog.png" alt="WOG"></div>
+          <div class="station-card__fuels"><span>A-95</span><span>ДП</span><span>Газ</span></div>
+          <button class="btn btn--accent station-card__btn" data-modal>Отримати промокод</button>
+        </div>
+        <div class="station-card">
+          <div class="station-card__logo"><img src="assets/images/logos/upg.png" alt="UPG"></div>
+          <div class="station-card__fuels"><span>A-95</span><span>ДП</span><span>Газ</span></div>
+          <button class="btn btn--accent station-card__btn" data-modal>Отримати промокод</button>
+        </div>
+        <div class="station-card">
+          <div class="station-card__logo"><img src="assets/images/logos/neftek.png" alt="NEFTEK"></div>
+          <div class="station-card__fuels"><span>A-95</span><span>ДП</span><span>Газ</span></div>
+          <button class="btn btn--accent station-card__btn" data-modal>Отримати промокод</button>
+        </div>
+        <div class="station-card">
+          <div class="station-card__logo"><img src="assets/images/logos/brsm.png" alt="БРСМ-Нафта"></div>
+          <div class="station-card__fuels"><span>A-95</span><span>ДП</span><span>Газ</span></div>
+          <button class="btn btn--accent station-card__btn" data-modal>Отримати промокод</button>
+        </div>
+        <div class="station-card">
+          <div class="station-card__logo"><img src="assets/images/logos/ukr.png" alt="Укрнафта"></div>
+          <div class="station-card__fuels"><span>A-95</span><span>ДП</span><span>Газ</span></div>
+          <button class="btn btn--accent station-card__btn" data-modal>Отримати промокод</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="instruction" id="instruction">
+    <div class="container">
+      <h2 class="instruction__title">Як отримати промокод</h2>
+      <div class="instruction__grid">
+        <div class="instruction-card">
+          <div class="instruction-card__number">1</div>
+          <div class="instruction-card__content">
+            <h3 class="instruction-card__step-title">Виберіть заправку</h3>
+            <p class="instruction-card__text">Натисніть кнопку «Отримати промокод» на обраній заправці.</p>
+          </div>
+        </div>
+        <div class="instruction-card">
+          <div class="instruction-card__number">2</div>
+          <div class="instruction-card__content">
+            <h3 class="instruction-card__step-title">Підтвердіть в Telegram</h3>
+            <p class="instruction-card__text">Підтвердіть свій номер телефону в нашому Telegram-боті та отримайте свій промокод.</p>
+          </div>
+        </div>
+        <div class="instruction-card">
+          <div class="instruction-card__number">3</div>
+          <div class="instruction-card__content">
+            <h3 class="instruction-card__step-title">Використайте промокод</h3>
+            <p class="instruction-card__text">Після підтвердження в боті покажіть промокод на касі та отримайте 10 літрів пального.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="assets/images/logo/dobro.svg" alt="Dobro" class="footer__logo">
+      <p class="footer__tagline">Заправляйся вигідно та швидко разом з Dobro.</p>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 Dobro. Всі права захищені.</p>
+      <div class="footer__legal">
+        <a href="#">Політика конфіденційності</a>
+        <a href="#">Публічна оферта</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="promoModal">
+  <div class="modal__overlay" id="modalOverlay"></div>
+  <div class="modal__content">
+    <button class="modal__close" id="modalClose">&times;</button>
+    <div class="modal__icon">
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 5L2 12.5L9 15M21 5L18.5 20L9 15M21 5L9 15M9 15V20L12 17" stroke="#EBF97B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <h3 class="modal__title">Отримати промокод</h3>
+    <p class="modal__text">Підтвердіть свій номер телефону в нашому Telegram-боті та отримайте свій промокод на 10 літрів.</p>
+    <a href="https://t.me/testttss1bot" target="_blank" class="btn btn--accent modal__btn">Перейти в Telegram</a>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
